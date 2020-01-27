@@ -40,10 +40,9 @@ const Tweeter = function () {
 
     const addComment = function (theComment,postId) {
         for (let i = 0; i < posts.length; i++) {
-            if (posts[i].id == postId) {
+            if (posts[i].id === postId) {
                 posts[i].comments.push({id: commentIdCounter,text: theComment })
                 commentIdCounter = "c" + (parseInt(commentIdCounter.substring(1)) + 1)
-
             }
         }
     }
