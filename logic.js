@@ -27,7 +27,7 @@ const Tweeter = function () {
 
     const addPost = function (text) {
         posts.push({ text: text, id: postsIdCounter,  comments: [] })
-        postsIdCounter = "p" + (parseInt(postsIdCounter[1].substring(1)) + 1)
+        postsIdCounter = "p" + (parseInt(postsIdCounter.substring(1)) + 1)
     }
 
     const removePost = function (postId) {

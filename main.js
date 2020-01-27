@@ -7,6 +7,7 @@ renderer.renderPosts(tweeter.getPosts())
 
 $("#post").on("click", function(){
     tweeter.addPost($("#container").find("input").val())
+    $("#container").find("input").val('')
     renderer.renderPosts(tweeter.getPosts())
 })
 

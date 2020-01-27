@@ -3,6 +3,7 @@ const Renderer = function () {
         $("#posts").empty();
         for (let i = 0; i < posts.length; i++) {
             $("#posts").append(`<div class="post" data-id="${posts[i].id}" id="${posts[i].id}">${posts[i]['text']}</div>`)
+            
             let postId= posts[i].id
             for (let j = 0; j < posts[i].comments.length; j++) {
                 $('#' +postId).append(`<br>`)
