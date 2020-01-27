@@ -10,7 +10,7 @@ $("#post").on("click", function(){
     renderer.renderPosts(tweeter.getPosts())
 })
 
-$(".delete").on("click", function(){
+$("div").on("click",".delete" ,function(){
     tweeter.removePost($(this).closest(".post").attr("id"))
     renderer.renderPosts(tweeter.getPosts())
 })
